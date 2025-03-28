@@ -1,0 +1,40 @@
+---
+import Shift from "../components/Shift";
+import Layout from "../components/layout.astro";
+import insta from "../assets/logos/insta.svg";
+import whatsapp from "../assets/logos/whatsapp.svg";
+import { Image } from "astro:assets";
+import { Github, Mail, Send } from "lucide-react";
+---
+
+<Layout>
+    <Shift client:only />
+    <div
+        class="relative z-10 p-8 w-screen h-screen inset-0 flex flex-col justify-center items-center snap-end"
+    >
+        <div class="flex flex-col">
+            <h1 class="font-bold text-4xl">
+                hi,
+                <br />
+                i am sayantan.
+            </h1>
+            <br />
+            a curious, creative, and passionate developer.
+            <br />
+            i build websites, apps, and open-source projects.
+            <br />
+            check out my work.
+            <div class="flex flex-row gap-4 mt-4">
+                <a target="_blank" href="mailto:mail.sntn.dev@gmail.com">
+                    <Mail />
+                </a>
+                <a target="_blank" href="https://t.me/stravo1">
+                    <Send />
+                </a>
+                <a target="_blank" href="https://github.com/stravo1">
+                    <Github />
+                </a>
+            </div>
+        </div>
+    </div>
+</Layout>
